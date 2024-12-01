@@ -10,7 +10,7 @@ form_router = APIRouter(
 )
 
 
-@form_router.get(path="/")
+@form_router.get(path="/add/")
 async def get_form(request: Request) -> ...:
     return templates.TemplateResponse(
         "form.html",
