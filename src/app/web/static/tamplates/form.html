@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Форма для заполнения</title>
 </head>
 <body>
-$END$
+<h1>Пожалуйста, заполните форму:</h1>
+<form action="/submit" method="post">
+    <label for="phone">Номер телефона:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>
+
+    <label for="fullname">Имя:</label><br>
+    <input type="text" id="fullname" name="fullname"><br><br>
+
+    <label for="address">Адрес:</label><br>
+    <textarea id="address" name="address"></textarea><br><br>
+
+    <label for="comment">Комментарий:</label><br>
+    <textarea id="comment" name="comment"></textarea><br><br>
+
+    <button type="submit">Отправить</button>
+</form>
 </body>
 </html>
